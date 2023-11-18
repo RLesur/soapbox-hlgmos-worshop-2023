@@ -1,0 +1,5 @@
+/.quarto/
+/.luarc.json
+index*.html
+index_files
+/public

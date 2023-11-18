@@ -1,0 +1,62 @@
+---
+title: Parquet files for large (and big) data dissemination
+footer:  |
+  Soapbox Session <br/>
+  _Workshop of the HLG-MOS 2023_
+author: Romain Lesur
+institute: INSEE (France)
+logo: img/logo.jpg
+date: 2023-11-22
+menu: false
+progress: false
+pdf-separate-fragments: true
+format:
+  revealjs:
+    width: 1080
+    height: 1080
+---
+
+# We tried Parquet files for bulk data dissemination...
+
+# ...and our users loved it!
+
+## What is Parquet?
+
+- A big data file format created in 2013
+- Open source (Apache Foundation)
+- Optimised for analytics workloads (OLAP)
+  * Columnar-oriented
+  * Efficient compression
+
+## Parquet files are easy to create
+
+A very large ecosystem now supports Parquet files (R, Python, Rust, Java, JavaScript, C#, C++, WASM...)
+
+Apache Arrow
+DuckDB
+Polars
+Dask, Spark...
+
+You can export your data in a Parquet file with a simple command
+
+## Parquet files are easy to use
+
+Only the needed chunks of data are read
+
+Thanks to DuckDB, Parquet files can be requested over the web
+
+- No need to download the file
+- Requests are blazing fast
+
+## Parquet as default file format?
+
+- Parquet can handle any size of data (small, large and big)
+- Adopted as INSEE's internal default file format, replacing SAS format (`SAS7BDAT`)
+- Our experiment for large data dissemination was a great success!
+- Is it the future of open data?
+
+Read Robin Linacre's post ["Why parquet file are my preferred API for bulk open data?"](https://www.robinlinacre.com/parquet_api/)
+
+
+
+
