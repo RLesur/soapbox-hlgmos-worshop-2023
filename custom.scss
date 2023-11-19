@@ -1,0 +1,27 @@
+/*-- scss:defaults --*/
+
+@import url('https://fonts.googleapis.com/css2?family=Proza+Libre:ital,wght@0,400;0,700;1,400;1,700');
+
+// fonts
+$font-family-sans-serif: 'Proza Libre', sans-serif !default;
+
+$presentation-font-size-root: 48px;
+$presentation-h1-font-size: 1.8em;
+$presentation-h2-font-size: 1.3em;
+
+$body-bg: #EFFAFD;
+$body-color: #333;
+
+/*-- scss:rules --*/
+
+.reveal img.slide-logo {
+  max-height: 5rem;
+}
+
+.blue {
+    color: #4A8BDF;
+}
+
+.red {
+    color: #A0006D;
+}

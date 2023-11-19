@@ -1,8 +1,7 @@
 ---
 title: Parquet files for large (and big) data dissemination
 footer:  |
-  Soapbox Session <br/>
-  _Workshop of the HLG-MOS 2023_
+  _Soapbox Session_ | Workshop of the HLG-MOS 2023
 author: Romain Lesur
 institute: INSEE (France)
 logo: img/logo.jpg
@@ -10,50 +9,75 @@ date: 2023-11-22
 menu: false
 progress: false
 pdf-separate-fragments: true
+preload-iframes: true
+view-distance: 7
+center: true
 format:
   revealjs:
+    theme: [default, custom.scss]
     width: 1080
     height: 1080
 ---
 
-# We tried Parquet files for bulk data dissemination...
+# We tried [Parquet]{.blue} for bulk data dissemination...
 
-# ...and our users loved it!
+![_Detailed results of the Census requested with DuckDB_](img/ducks.png){fig-align="center"}
 
-## What is Parquet?
+# ...and our users <br/> [loved]{.red} it!
 
-- A big data file format created in 2013
-- Open source (Apache Foundation)
+## What is [Parquet]{.blue}?
+
+- A [big data file format]{.blue} created in 2013
+- [Open source]{.red} (Apache Foundation)
 - Optimised for analytics workloads (OLAP)
   * Columnar-oriented
-  * Efficient compression
+  * Efficient compression  
+\
+![](img/Apache_Parquet_logo.png){fig-align="center"}
 
-## Parquet files are easy to create
 
-A very large ecosystem now supports Parquet files (R, Python, Rust, Java, JavaScript, C#, C++, WASM...)
+## [Parquet]{.blue} files are [easy to create]{.red}
 
-Apache Arrow
-DuckDB
-Polars
-Dask, Spark...
+A file format supported by a large ecosystem 
 
-You can export your data in a Parquet file with a simple command
+![](img/arrow-logo.png){.absolute top=200 left=50 height="200"}
 
-## Parquet files are easy to use
+![](img/duckdb_logo.png){.absolute top=200 right=50 height="150"}
 
-Only the needed chunks of data are read
+![](img/Apache_Spark_logo.png){.absolute top=400 left=50 height="150"}
 
-Thanks to DuckDB, Parquet files can be requested over the web
+![](img/polars_logo.png){.absolute top=400 left=400 height="150"}
 
-- No need to download the file
-- Requests are blazing fast
+Create a Parquet file with a simple command!
 
-## Parquet as default file format?
+available in R, Python, Rust, Java, JavaScript, C#, C++...
 
-- Parquet can handle any size of data (small, large and big)
-- Adopted as INSEE's internal default file format, replacing SAS format (`SAS7BDAT`)
-- Our experiment for large data dissemination was a great success!
-- Is it the future of open data?
+
+## [Parquet]{.blue} files are [easy to use]{.red}
+
+**[Efficient]{.blue}**  
+Only the required chunks of data are read
+
+With DuckDB  
+**[Parquet files can be requested]{.blue} [over the web]{.red}**  
+No need to download the whole file
+
+{{< tweet _Blef 1720875866840866999 >}}
+
+## [Parquet as [default]{.red} file format?]{.blue}
+
+- Parquet can handle any size of data  
+  (small, large and big)
+- Adopted as INSEE's internal default file format, replacing SAS format (SAS7BDAT)
+- Our experiment for bulk data dissemination was a great success!
+
+::: {style="text-align: center;"}
+
+### **[Is it the]{.blue} [future]{.red} [of open data?]{.blue}**
+
+:::
+
+\
 
 Read Robin Linacre's post ["Why parquet file are my preferred API for bulk open data?"](https://www.robinlinacre.com/parquet_api/)
 
