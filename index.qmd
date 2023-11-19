@@ -1,5 +1,5 @@
 ---
-title: Parquet files for large (and big) data dissemination
+title: Parquet files for large <br/> (and big) <br/> data dissemination
 footer:  |
   _Soapbox Session_ | Workshop of the HLG-MOS 2023
 author: Romain Lesur
@@ -21,7 +21,7 @@ format:
 
 # We tried [Parquet]{.blue} for bulk data dissemination...
 
-![_Detailed results of the Census requested with DuckDB_](img/ducks.png){fig-align="center"}
+![_Detailed results of the Census requested with DuckDB_](img/ducks.png){fig-align="center" height=700}
 
 # ...and our users <br/> [loved]{.red} it!
 
@@ -36,7 +36,7 @@ format:
 ![](img/Apache_Parquet_logo.png){fig-align="center"}
 
 
-## [Parquet]{.blue} files are [easy to create]{.red}
+## Parquet files are [easy to create]{.red}
 
 A file format supported by a large ecosystem 
 
@@ -48,38 +48,39 @@ A file format supported by a large ecosystem
 
 ![](img/polars_logo.png){.absolute top=400 left=400 height="150"}
 
+::: {.absolute left=0 bottom=-700}
+
 Create a Parquet file with a simple command!
 
 available in R, Python, Rust, Java, JavaScript, C#, C++...
 
+:::
 
-## [Parquet]{.blue} files are [easy to use]{.red}
+## Parquet files are [easy to use]{.red}
 
-**[Efficient]{.blue}**  
-Only the required chunks of data are read
+**Requests are [efficient]{.blue}**  
+_Only the required chunks of data are read_
 
-With DuckDB  
-**[Parquet files can be requested]{.blue} [over the web]{.red}**  
-No need to download the whole file
+\
+
+**With [DuckDB]{.blue}, Parquet files can be**\
+**requested [over the web]{.red}**  
+_No need to download the whole file!_
 
 {{< tweet _Blef 1720875866840866999 >}}
 
-## [Parquet as [default]{.red} file format?]{.blue}
+## Parquet as a [default]{.blue} file format for dissemination?
 
 - Parquet can handle any size of data  
   (small, large and big)
 - Adopted as INSEE's internal default file format, replacing SAS format (SAS7BDAT)
 - Our experiment for bulk data dissemination was a great success!
 
-::: {style="text-align: center;"}
-
-### **[Is it the]{.blue} [future]{.red} [of open data?]{.blue}**
-
-:::
+### **[Is it the]{.blue} [future]{.red} [of open data?]{.blue}** {style="text-align: center;"}
 
 \
 
-Read Robin Linacre's post ["Why parquet file are my preferred API for bulk open data?"](https://www.robinlinacre.com/parquet_api/)
+_FMI, read Robin Linacre's post ["Why parquet file are my preferred API for bulk open data?"](https://www.robinlinacre.com/parquet_api/)_
 
 
 
