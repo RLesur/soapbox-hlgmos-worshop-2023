@@ -23,7 +23,7 @@ format:
 
 ![_Detailed results of the Census requested with DuckDB_](img/ducks.png){fig-align="center" height=700}
 
-# ...and our users <br/> [loved]{.red} it!
+# ...and our users [loved]{.red} it!
 
 ## What is [Parquet]{.blue}?
 
